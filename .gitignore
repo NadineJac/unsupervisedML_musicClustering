@@ -1,6 +1,9 @@
 # secrets
 *keys.py
 
+# playlist data
+*.pkl
+
 # Editors
 .vscode/
 .idea/
