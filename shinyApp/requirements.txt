@@ -1,0 +1,5 @@
+matplotlib
+shiny
+shinyswatch
+numpy
+pandas

@@ -62,8 +62,6 @@ README.md
 - Correlation matrix of chosen features  
 - Feature distributions per cluster  
 - Number of songs per playlist  
-- PCA projection of clustered songs  
-
 
 
 ## 🔗 How to Use This Project
@@ -81,11 +79,11 @@ README.md
 
 3. Run the analysis notebooks in order:
 
-    - Start with [1_exploreMusic.ipynb](notebooks\1_exploreMusic.ipynb)
+    - Start with [1_exploreMusic.ipynb](notebooks/1_exploreMusic.ipynb)
 
-    - Continue with [2_optimizeClustering_5000songs.ipynb](notebooks\2_optimizeClustering_5000songs.ipynb)
+    - Continue with [2_optimizeClustering_5000songs.ipynb](notebooks/2_optimizeClustering_5000songs.ipynb)
 
-    - Reproduce clustering and export results via [3_cluster_send2spotify.ipynb](notebooks\3_cluster_send2spotify.ipynb)
+    - Reproduce clustering and export results via [3_cluster_send2spotify.ipynb](notebooks/3_cluster_send2spotify.ipynb)
 
 All generated plots and results will be saved in the images/ folder.
 
