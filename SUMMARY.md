@@ -50,11 +50,15 @@ The optimal number of clusters was determined to be **52 playlists**, selected b
 
 <img src="images/AverageFeatures_allClusters_lineplot.png" alt="Songs per playlist" style="width:50%; height:auto;">
 
-_Example of a playlist encompassing songs of similar moods._
-<video controls src="images/playlist0.mp4" style="width:50%; height:auto;" title="Title"></video>
 
-_Example of a playlist encompassing songs of very different moods._
-<video controls src="images/playlist2.mp4" style="width:50%; height:auto;" title="Title"></video>
+_Example of a playlist encompassing songs of similar moods:_
+
+https://github.com/user-attachments/assets/3f80a319-bc10-441e-8548-c94dbc73ba50
+
+
+_Example of a playlist encompassing songs of very different moods:_
+
+https://github.com/user-attachments/assets/69d98ddb-4f3f-41aa-89b6-b2c45b485a58
 
 
 ### Can Spotify's Audio Features Identify Similar Songs?
