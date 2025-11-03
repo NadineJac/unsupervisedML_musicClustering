@@ -10,6 +10,8 @@ This project explores how **k-means clustering** can be used to automatically gr
 
 The goal is to identify meaningful clusters that capture distinct moods or styles, providing a foundation for automated playlist generation.
 
+[📄 Project Summary](SUMMARY.md)
+
 ## 📊 Dataset & Sources
 - **Data source:** Spotify song dataset provided by *WBS Coding School* – [get data here](https://drive.google.com/uc?export=download&id=1oYQSNxfvw6kFr6-N9rKLRAnLXlp0osEt)  
 - **Dataset size:** 5,000 records  
