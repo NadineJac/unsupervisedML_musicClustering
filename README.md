@@ -10,7 +10,6 @@ This project explores how **k-means clustering** can be used to automatically gr
 
 The goal is to identify meaningful clusters that capture distinct moods or styles, providing a foundation for automated playlist generation.
 
-
 ## 📊 Dataset & Sources
 - **Data source:** Spotify song dataset provided by *WBS Coding School* – [get data here](https://drive.google.com/uc?export=download&id=1oYQSNxfvw6kFr6-N9rKLRAnLXlp0osEt)  
 - **Dataset size:** 5,000 records  
@@ -20,20 +19,16 @@ The goal is to identify meaningful clusters that capture distinct moods or style
   - Standard scaling was applied to remove unit bias before clustering.  
   - Optimal number of clusters (52) determined using **inertia** and **silhouette** scores across 20–100 clusters.  
 
-
-
 ## 🚀 Key Findings & Results
 - **52 playlists** were created, each containing on average **100 songs** (range: 21–258).  
 - Most playlists represented distinct moods or energy levels (e.g., “calm acoustic,” “energetic dance”), though a few contained outlier songs.  
 - Visualizations confirmed well-separated clusters in feature space and strong internal consistency for most groups.  
-
 
 ## 🛠️ Technologies Used
 - **Programming Language:** Python  
 - **Key Libraries:** `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`  
 - **Tools:** Jupyter Notebook  
 
----
 
 ## 📁 Project Structure
 ```
@@ -54,15 +49,12 @@ README.md
 - `notebooks/`: Jupyter notebooks documenting each project step.  
 - `requirements.txt`: Python dependencies.  
 
-
-
 ## 📈 Visualizations
 - Inertia (Elbow method) for 20–100 clusters  
 - Silhouette scores for 20–100 clusters  
 - Correlation matrix of chosen features  
 - Feature distributions per cluster  
 - Number of songs per playlist  
-
 
 ## 🔗 How to Use This Project
 **Setup:**
@@ -75,8 +67,6 @@ README.md
     ```
     pip install -r requirements.txt
     ```
-
-
 3. Run the analysis notebooks in order:
 
     - Start with [1_exploreMusic.ipynb](notebooks/1_exploreMusic.ipynb)
@@ -84,19 +74,35 @@ README.md
     - Continue with [2_optimizeClustering_5000songs.ipynb](notebooks/2_optimizeClustering_5000songs.ipynb)
 
     - Reproduce clustering and export results via [3_cluster_send2spotify.ipynb](notebooks/3_cluster_send2spotify.ipynb)
+    ❗If you want to send your playlists to spotify, you must create an [app](https://developer.spotify.com/documentation/web-api/concepts/apps) and provide the redirectUri, client ID and client secret as well as your spotify username in keys.py (not shared)
 
 All generated plots and results will be saved in the images/ folder.
 
 ## 🚀 Future Work
-
 * Integrate **personalized recommendations** using user listening histories.
 
 * Add **AI-generated playlist titles, descriptions, and cover art**.
 
 * Develop an **interactive dashboard** to adjust features and visualize cluster outcomes in real time.
 
+## 🎵 Audio features
+
+| Feature | Description |
+|----------|-------------|
+| **acousticness** | Confidence measure (0.0–1.0) of whether a track is acoustic. |
+| **danceability** | How suitable a track is for dancing based on rhythm, tempo, and beat stability. |
+| **duration_ms** | Duration of the track in milliseconds. |
+| **energy** | Perceptual measure (0.0–1.0) of intensity and activity. High for loud, fast tracks. |
+| **instrumentalness** | Likelihood (0.0–1.0) that the track contains no vocals. |
+| **key** | Musical key of the track (e.g., 0 = C, 1 = C♯/D♭, etc.). |
+| **liveness** | Probability that the track was performed live. |
+| **loudness** | Average loudness in decibels (dB), typically between -60 and 0. |
+| **mode** | Indicates major (1) or minor (0) modality. |
+| **speechiness** | Detects spoken words in a track (higher = more speech-like). |
+| **tempo** | Estimated tempo in beats per minute (BPM). |
+| **time_signature** | Number of beats per measure. |
+| **valence** | Describes the musical positiveness (0.0 = sad, 1.0 = happy). |
 
 ## 📜 License
-
 This project is released under the [MIT License](LICENSE).
 
