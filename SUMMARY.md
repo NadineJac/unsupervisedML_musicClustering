@@ -92,6 +92,7 @@ K-Means clustering serves as a solid starting point for automatic playlist gener
 ## AI-Generated Playlist Descriptions
 
 AI-assisted playlist description based on average feature values per cluster is possible as a quick proof of concept for the previuos examples revealed. 
+
 <img src="images/example_playlist_covers.png" alt="Example playlist covers and titles" style="width:50%; height:auto;">
 
 Additional information on included songs might improve the performance.
